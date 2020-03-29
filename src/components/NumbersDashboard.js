@@ -27,16 +27,25 @@ function NumbersDashboard() {
 
   return (
     <div className='min-h-screen w-1/3 flex flex-col justify-between'>
-      <div className='flex-grow flex justify-center items-center bg-gray-100'> 
-        <span className='text-6xl'> {confirmedCases} </span>
+      <div className='flex-grow flex justify-center items-center bg-gray-100 border-l-4 border-black'> 
+        <div className='text-center'>
+          <span className='text-6xl'> {confirmedCases} </span>
+          <span className='block uppercase'> confirmed </span>
+        </div>
       </div>
 
-      <div className='flex-grow flex justify-center items-center bg-blue-500'> 
-        <span className='text-6xl'> {deathCases} </span>
+      <div className='flex-grow flex justify-center items-center bg-gray-300 border-l-4 border-black'> 
+        <div className='text-center'>
+          <span className='text-6xl'> {deathCases} </span>
+          <span className='block uppercase'> deaths </span>
+        </div>
       </div>
 
-      <div className='flex-grow flex justify-center items-center bg-yellow-500'> 
-        <span className='text-6xl'> {recoveredCases} </span>
+      <div className='flex-grow flex justify-center items-center bg-gray-100 border-l-4 border-black'> 
+        <div className='text-center'>
+          <span className='text-6xl'> {recoveredCases} </span>
+          <span className='block uppercase'> recovered </span>
+        </div>
       </div>
     </div>
   )
