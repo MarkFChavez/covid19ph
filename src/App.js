@@ -6,8 +6,8 @@ import NumbersDashboard from './components/NumbersDashboard';
 function App() {
   return (
     <div className='flex'>
-      <GraphDashboard />
       <NumbersDashboard />
+      <GraphDashboard />
     </div>
   );
 }
